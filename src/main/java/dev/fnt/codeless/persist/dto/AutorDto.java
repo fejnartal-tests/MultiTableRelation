@@ -1,12 +1,17 @@
 package dev.fnt.codeless.persist.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import dev.fnt.codeless.persist.entity.Autor;
 
+public class AutorDto extends Autor {
+	public Integer getId() {
+		return id;
+	}
 
-public class AutorDto {
-	@JsonIgnoreProperties({"nombre"})
-	public static class HideNombre {}
+	public String getNombre() {
+		return nombre;
+	};
 
-	@JsonIgnoreProperties({"id"})
-	public static class HideId {}
+	public void setNombre() {
+		this.nombre = nombre + " - Modificado";
+	}
 }

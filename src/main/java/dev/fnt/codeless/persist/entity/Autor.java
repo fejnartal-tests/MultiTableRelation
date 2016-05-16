@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Autor {
 	@Id
 	@GeneratedValue
-	private Integer id;
-	private String nombre;
+	protected Integer id;
+	protected String nombre;
 	//public Collection<Libro> libros;
 }
