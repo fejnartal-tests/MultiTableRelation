@@ -10,8 +10,15 @@ public class AutorDto extends Autor {
 	public String getNombre() {
 		return nombre;
 	};
-
-	public void setNombre() {
-		this.nombre = nombre + " - Modificado";
+	public String getTipo() {
+		return tipo;
 	}
+
+	public String getAutorEditorial() {
+		return autorEditorial.editorial;
+	}
+
+//	public AutorBlog getAutorBlog() {
+//		return autorBlog;
+//	}
 }
